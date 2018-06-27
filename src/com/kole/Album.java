@@ -2,7 +2,6 @@ package com.kole;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.ListIterator;
 
 public class Album {
     private String name;
