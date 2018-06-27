@@ -2,6 +2,7 @@ package com.kole;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class Main {
 
@@ -42,5 +43,13 @@ public class Main {
         albums.get(1).addSongToPlayList("Superhero", playList);
         albums.get(1).addSongToPlayList("Matador", playList);
         albums.get(1).addSongToPlayList("Matador", playList);
+    }
+
+    public static void play(LinkedList<Song> playList){
+        ListIterator<Song> listIterator = playList.listIterator();
+        boolean quit = false;
+        while (!quit){
+
+        }
     }
 }
