@@ -23,11 +23,22 @@ public class Album {
     }
 
     public void addSongToPlayList(int songIndex, LinkedList<Song> playList){
-
+        if (songIndex>=0 && songIndex<=this.songs.size()){
+            System.out.println("Added song with index " + songIndex + " to album");
+            playList.add(this.songs.get(songIndex));
+        }else {
+            System.out.println("No song with index " + songIndex + " in album");
+        }
     }
 
     public void addSongToPlayList(String songName, LinkedList<Song> playList){
-
+        Song tempSong = returnSong(songName);
+        if (tempSong!=null){
+            System.out.println("Song is already on playlist");
+        }else {
+            System.out.println("Added song with name " + songName + " to playlist");
+            playList.add(returnSong(songName));
+        }
     }
 
     public void addSongToAlbum(String songName, String songArtist, double duration){
