@@ -24,7 +24,7 @@ public class Album {
 
     public void addSongToPlayList(int songIndex, LinkedList<Song> playList){
         if (songIndex>=0 && songIndex<=this.songs.size()){
-            System.out.println("Added song with index " + songIndex + " to album");
+            System.out.println("Added song with index " + songIndex + " to playlist");
             playList.add(this.songs.get(songIndex));
         }else {
             System.out.println("No song with index " + songIndex + " in album");
